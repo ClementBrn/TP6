@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "hKRx1EWIk9b659cmw/TM3B9cAABa13BSpJq2o3/4hrV/ip14S/gW8t550HN8XIFQ6L7eD1phHY5ltxMtxCG6JQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cleme\\source\\repos\\TP1\\TP1\\TP1\\TP1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cleme\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\cleme\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\cleme\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+  ],
+  "logs": []
+}
