@@ -20,7 +20,6 @@ namespace TP1.UWP
         public MainPage()
         {
             this.InitializeComponent();
-
             LoadApplication(new TP1.App());
         }
     }
