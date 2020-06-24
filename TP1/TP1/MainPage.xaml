@@ -15,20 +15,22 @@
                 <ImageButton Source="search.png" WidthRequest="25"></ImageButton>
             </StackLayout>
         </ContentView>
-        <StackLayout Orientation="Vertical">
+        <StackLayout x:Name="ConnexionForm" Orientation="Vertical" IsVisible="true">
             <Label Text="Connexion à Twitter" HorizontalOptions="CenterAndExpand"></Label>
-            <Entry Placeholder="Identifiant Twitter" HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Email"
+            <Entry x:Name="login" Placeholder="Identifiant Twitter" HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Email"
                    ReturnType="Next"></Entry>
-            <Entry Placeholder="Mot de passe" HorizontalOptions="FillAndExpand" MaxLength="50" IsPassword="True"
+            <Label x:Name="LoginError" Text="" TextColor="Red" IsVisible="false"></Label>
+            <Entry x:Name="password" Placeholder="Mot de passe" HorizontalOptions="FillAndExpand" MaxLength="50" IsPassword="True"
                    ReturnType="Next"></Entry>
+            <Label x:Name="PasswordError" Text="" TextColor="Red" IsVisible="false"></Label>
             <StackLayout Orientation="Horizontal">
-                <Switch></Switch>
+                <Switch x:Name="memorize"></Switch>
                 <Label Text="Mémoriser mes identifiants ?"></Label>
             </StackLayout>
-            <Button Text="Se connecter" HorizontalOptions="FillAndExpand"></Button>
+            <Button Text="Se connecter" HorizontalOptions="FillAndExpand" Clicked="Connexion_Clicked"></Button>
         </StackLayout>
             <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <StackLayout Orientation="Vertical">
+            <StackLayout x:Name="TweetList" Orientation="Vertical" IsVisible="false">
                 <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
                         <Image  Source="https://picsum.photos/50/50/?random" Margin="10" WidthRequest="75" Aspect="AspectFit"></Image>
