@@ -10,9 +10,9 @@
     <StackLayout>
         <ContentView BackgroundColor="#58B0F0">
             <StackLayout Orientation="Horizontal" Margin="10, 25">
-                <ImageButton Source="Assets/pencil.png" WidthRequest="25"></ImageButton>
+                <ImageButton Source="pencil.png" WidthRequest="25"></ImageButton>
                 <Label Text="Accueil" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="20" FontAttributes="Bold"></Label>
-                <ImageButton Source="Assets/search.png" WidthRequest="25"></ImageButton>
+                <ImageButton Source="search.png" WidthRequest="25"></ImageButton>
             </StackLayout>
         </ContentView>
         <StackLayout Orientation="Vertical">
@@ -41,9 +41,9 @@
                     <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod convallis dolor. Quisque ultricies porttitor nunc venenatis facilisis"></Label>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
-                    <ImageButton Source="Assets/reply.png" WidthRequest="25" HorizontalOptions="CenterAndExpand"></ImageButton>
-                    <ImageButton Source="Assets/retweet.png" WidthRequest="25" HorizontalOptions="CenterAndExpand"></ImageButton>
-                    <ImageButton Source="Assets/favorite.png" WidthRequest="25" HorizontalOptions="CenterAndExpand"></ImageButton>
+                    <ImageButton Source="reply.png" WidthRequest="25" HorizontalOptions="CenterAndExpand"></ImageButton>
+                    <ImageButton Source="retweet.png" WidthRequest="25" HorizontalOptions="CenterAndExpand"></ImageButton>
+                    <ImageButton Source="favorite.png" WidthRequest="25" HorizontalOptions="CenterAndExpand"></ImageButton>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="LightGray"></StackLayout>
             </StackLayout>

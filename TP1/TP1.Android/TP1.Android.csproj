@@ -85,9 +85,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\drawable\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\TP1\TP1.csproj">
       <Project>{EECBD001-854E-4762-AC1D-9CC9779EB753}</Project>
@@ -95,19 +93,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Assets\favorite.png" />
+    <EmbeddedResource Include="Resources\drawable\favorite.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Assets\pencil.png" />
+    <EmbeddedResource Include="Resources\drawable\pencil.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Assets\reply.png" />
+    <EmbeddedResource Include="Resources\drawable\reply.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Assets\retweet.png" />
+    <EmbeddedResource Include="Resources\drawable\retweet.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Assets\search.png" />
+    <EmbeddedResource Include="Resources\drawable\search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
