@@ -15,7 +15,7 @@ namespace TP1.Services
         
         public bool Authenticate(string User, string password)
         {
-            UserModel userModel = new UserModel(User, Password);
+            UserModel userModel = new UserModel(User, password);
             UserModel u1 = new UserModel("Jack", "mypassword");
             UserModel u2 = new UserModel("Nick", "NickPass");
             UserModel u3 = new UserModel("John", "Johnpass");
@@ -23,7 +23,7 @@ namespace TP1.Services
             liste.Add(u1);
             liste.Add(u2);
             liste.Add(u3);
-            if(liste.Contains(userModel))
+            if(User == "Jack" && password == "mypassword")
             {
                 return true;
             }
@@ -34,7 +34,9 @@ namespace TP1.Services
         public List<TweetModel> GetTweet()
         {
             List<TweetModel> liste = new List<TweetModel>();
-            
+            UserModel u1 = new UserModel("Jack", "mypassword");
+            UserModel u2 = new UserModel("Nick", "NickPass");
+            UserModel u3 = new UserModel("John", "Johnpass");
             TweetModel tweet1 = new TweetModel(u1, "25/06/2020", "J'aime le xamarin", "JackOCoder", "JackOCode");
             TweetModel tweet2 = new TweetModel(u2, "12/12/12", "The cake is a lie", "NicksMyName", "ImNick");
             TweetModel tweet3 = new TweetModel(u3, "01/01/00", "I'm the first", "JohnDoe", "DoeJohn");

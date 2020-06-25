@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TP1.Models;
 using TP1.Services;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace TP1
@@ -21,26 +22,31 @@ namespace TP1
             InitializeComponent();
         }
 
-        private void Connexion()
-        {
-
-        }
-
         private void Connexion_Clicked(object sender, EventArgs e)
         {
             FormModel form = new FormModel(this.login.Text.ToString(), this.password.Text.ToString());
             string login = this.login.Text.ToString();
             string password = this.password.Text.ToString();
-            if (twitterServices.Authenticate(login, password))
+            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
             {
-                ConnexionForm.IsVisible = false;
-                TweetList.IsVisible = true;
-                twitterServices.GetTweet();
+
+
+                if (twitterServices.Authenticate(login, password))
+                {
+                    ConnexionForm.IsVisible = false;
+                    TweetList.IsVisible = true;
+                    twitterServices.GetTweet();
+                }
+                else
+                {
+                    LoginError.Text = "Login incorrect";
+                    LoginError.IsVisible = true;
+                }
             }
             else
             {
-                    LoginError.Text = "Login incorrect";
-                    LoginError.IsVisible = true;
+                LoginError.Text = "Vous devez être connecté à internet";
+                LoginError.IsVisible = true;
             }
         }
     }

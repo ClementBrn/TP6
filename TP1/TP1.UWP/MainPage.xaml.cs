@@ -21,6 +21,7 @@ namespace TP1.UWP
         {
             this.InitializeComponent();
             LoadApplication(new TP1.App());
+
         }
     }
 }
