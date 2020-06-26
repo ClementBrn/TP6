@@ -8,25 +8,29 @@ namespace TP1.Models
 {
     public class TweetModel
     {
-        private UserModel User;
-        private string TweetDate { get; set; }
-        private string Message { get; set; }
+		private UserModel user;
+		private String data;
+		private DateTime createdAt;
 
-        private string Nickname { get; set; }
-        private String UserName { get; set; }
-        private List<TweetModel> listeTweet { get; set; }
+		public UserModel User
+		{
+			get { return user; }
+			set { user = value; }
+		}
+		public String Data
+		{
+			get { return data; }
+			set { data = value; }
+		}
+		public DateTime CreatedAt
+		{
+			get { return createdAt; }
+			set { createdAt = value; }
+		}
 
-        public TweetModel(UserModel user, string TweetDate, string Message, string Nickname, string UserName)
-        {
-            User = User;
-            TweetDate = this.TweetDate;
-            Message = this.Message;
-            Nickname = this.Nickname;
-            UserName = this.UserName;
-        }
 
 
-        
-    
-    }
+
+
+	}
 }

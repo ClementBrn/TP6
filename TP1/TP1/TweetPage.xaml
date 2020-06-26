@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TP1.TweetPage">
+    <ContentPage.Content>
+        <ListView x:Name="ListeViewTweet">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <ContentView>
+                                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
+                                            <Image  Source="https://picsum.photos/50/50/?random" Margin="10" WidthRequest="75" Aspect="AspectFit"></Image>
+                                            <Label Text="{Binding User.Login}"></Label>
+                                            <Label Text="{Binding User.Password}"></Label>
+                                            <Label Text="{Binding CreatedAt}"></Label>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                            <Label Text="{Binding Data}"></Label>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ContentView>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>            
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

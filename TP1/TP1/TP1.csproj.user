@@ -3,4 +3,9 @@
   <PropertyGroup>
     <AutoRefresh>false</AutoRefresh>
   </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="TweetPage.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

@@ -9,6 +9,6 @@ namespace TP1.Services
     {
         bool Authenticate(string User, string password);
 
-        List<TweetModel> GetTweet();
+        List<TweetModel> GetTweet { get; }
     }
 }

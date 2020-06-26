@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TP1.Views.Footer">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HeightRequest="75">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  VerticalOptions="EndAndExpand">
+                <Label Text="Fil" HorizontalOptions="CenterAndExpand" TextColor="Gray"></Label>
+                <Label Text="Notifications" HorizontalOptions="CenterAndExpand" TextColor="Gray"></Label>
+                <Label Text="Messages" HorizontalOptions="CenterAndExpand" TextColor="Gray"></Label>
+                <Label Text="Moi" HorizontalOptions="CenterAndExpand" TextColor="Gray"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

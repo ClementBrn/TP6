@@ -22,7 +22,7 @@ namespace TP1
             InitializeComponent();
         }
 
-        private void Connexion_Clicked(object sender, EventArgs e)
+        private async void Connexion_Clicked(object sender, EventArgs e)
         {
             FormModel form = new FormModel(this.login.Text.ToString(), this.password.Text.ToString());
             string login = this.login.Text.ToString();
@@ -33,9 +33,8 @@ namespace TP1
 
                 if (twitterServices.Authenticate(login, password))
                 {
+                    await Navigation.PushAsync(new TweetPage());
                     ConnexionForm.IsVisible = false;
-                    TweetList.IsVisible = true;
-                    twitterServices.GetTweet();
                 }
                 else
                 {

@@ -6,13 +6,19 @@ namespace TP1.Models
 {
     public class UserModel
     {
-        private string login { get; set; }
-        private string password { get; set; }
+		private String login;
+		private String password;
 
-        public UserModel(string login, string password)
-        {
-            login = this.login;
-            password = this.password;
-        }
-    }
+		public String Login
+		{
+			get { return login; }
+			set { login = value; }
+		}
+
+		public String Password
+		{
+			get { return password; }
+			set { password = value; }
+		}
+	}
 }
